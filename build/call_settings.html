@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>Call settings</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/bbo0nya.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../build/bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="../build/bower_comp/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../build/bower_comp/components-font-awesome/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="../build/bower_comp/intl-tel-input/build/css/intlTelInput.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<!--begin header-->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="/"><img src="img/logo_limecall.png" alt="Logo" /></a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end header-->
+
+<!--begin call-->
+<section class="page_global call">
+    <div class="container">
+        <div class="row call__wrapper">
+            <div class="col-lg-6 call__icon">
+                <img src="img/icon_call_settings.svg" alt="Icon" />
+            </div>
+            <div class="col-lg-6 call__info call_info">
+                <div class="call_info__text">
+                    <h1 class="title title_global">Call settings</h1>
+                    <p class="text_global">Set up your calling wizzard, and get started.</p>
+                    <form>
+                        <h3 class="title">Verify your number</h3>
+                        <p>to start receiving calls from your leads</p>
+                        <div class="call_info__number" id="call_number" style="display: block;">
+                            <input type="tel" id="phone">
+                            <input type="submit" value="Verify">
+                            <p><a class="resend_code" data-related="call_code" href="#/">Resend Code</a> <span>|</span> <a class="verify_call" data-related="call_recall" href="#/">Verify via call instead</a></p>
+                        </div>
+                        <div class="call_info__number" id="call_code">
+                            <input type="number">
+                            <input type="submit" value="ENTER CODE">
+                            <p><span>Enter your phone number and we’ll Call you.</span></p>
+                        </div>
+                        <div class="call_info__number" id="call_recall">
+                            <input type="tel" id="recall">
+                            <input type="submit" value="Call">
+                            <p><span>Enter your phone number and we’ll Call you .</span></p>
+                        </div>
+                    </form>
+                    <div class="pagination_global">
+                        <a href="#/">Continue >></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end call-->
+
+
+
+<!-- bower:js -->
+<script src="../build/bower_comp/jquery/dist/jquery.js"></script>
+<script src="../build/bower_comp/swiper/dist/js/swiper.js"></script>
+<script src="../build/bower_comp/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../build/bower_comp/intl-tel-input/build/js/intlTelInput.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

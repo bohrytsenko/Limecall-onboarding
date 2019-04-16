@@ -1,0 +1,165 @@
+// Start capturing
+
+.capturing
+  &:before
+    left: 0
+    right: initial
+  &__widget
+    text-align: right
+    width: 510px
+    max-width: 100%
+    margin-bottom: 50px
+  &__info
+    width: 510px
+    max-width: 100%
+    margin-bottom: 30px
+    form
+      width: 100%
+      input, textarea, select
+        outline: none
+      label
+        width: 100%
+        margin-bottom: 20px
+        .title
+          color: $color_black
+          font-size: 20px
+          font-weight: 300
+          margin-bottom: 14px
+        input, select
+          height: 52px
+          width: 100%
+          background-color: white
+          border: 1px solid #dedede
+          border-radius: 3px
+          padding-left: 15px
+          appearance: none
+        textarea
+          min-height: 104px
+          height: 52px
+          width: 100%
+          resize: none
+          background-color: white
+          border: 1px solid #dedede
+          border-radius: 3px
+          padding: 15px
+          &::placeholder
+            color: #dedede
+            font-size: 14px
+            font-weight: 400
+
+// Colors
+
+.colors__wrapper
+  display: flex
+  align-items: center
+  span
+    color: black
+    font-size: 20px
+    font-weight: 300
+    margin-right: 10px
+  input[type="text"]
+    height: 30px
+    &::placeholder
+      color: #dedede
+      font-size: 14px
+      font-weight: 400
+
+.sb-checkbox 
+  margin: 0 13px 0 0
+
+.sb-checkbox 
+  display: inline-block
+  font-size: 0
+
+.sb-checkbox__input 
+  display: none
+
+.sb-checkbox__input:checked + .sb-checkbox__label:after 
+  opacity: 1
+
+.sb-checkbox__label 
+  display: inline-block
+  width: 30px
+  height: 30px
+  position: relative
+  cursor: pointer
+  margin-bottom: 0!important
+
+.sb-checkbox__label:before 
+  content: ''
+  width: 30px
+  height: 30px
+  border: 2px solid
+  box-sizing: border-box
+  display: inline-block
+  position: absolute
+  top: 0
+  left: 0
+
+.sb-checkbox__label:after 
+  content: '\f00c'
+  font-family: 'Font Awesome 5 Free'
+  font-size: 10px
+  font-weight: 900
+  line-height: 30px
+  text-align: center
+  width: 30px
+  height: 30px
+  display: block
+  overflow: hidden
+  opacity: 0
+  transition: .2s opacity
+
+.sb-checkbox__label--rose:before
+  border-color: #ff0073
+  background-color: #ff0073
+  z-index: -1
+
+.sb-checkbox__label--rose:after
+  color: #FFFFFF
+  z-index: 2
+
+.sb-checkbox__label--yellow:before
+  border-color: #ffd800
+  background-color: #ffd800
+  z-index: -1
+
+.sb-checkbox__label--yellow:after
+  color: #FFFFFF
+  z-index: 2
+
+.sb-checkbox__label--orange:before
+  border-color: #ff9900
+  background-color: #ff9900
+  z-index: -1
+
+.sb-checkbox__label--orange:after
+  color: #FFFFFF
+  z-index: 2
+
+.sb-checkbox__label--green:before
+  border-color: #7ed321
+  background-color: #7ed321
+  z-index: -1
+
+.sb-checkbox__label--green:after
+  color: #FFFFFF
+  z-index: 2
+
+.sb-checkbox__label--blue:before
+  border-color: #0095ff
+  background-color: #0095ff
+  z-index: -1
+
+.sb-checkbox__label--blue:after
+  color: #FFFFFF
+  z-index: 2
+
+.sb-checkbox__label--purple:before
+  border-color: #a200ff
+  background-color: #a200ff
+  z-index: -1
+
+.sb-checkbox__label--purple:after
+  color: #FFFFFF
+  z-index: 2

@@ -1,0 +1,126 @@
+// Install
+
+.install
+  &:before
+    left: 0
+    right: initial
+  &:after
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    width: 50%
+    height: 100%
+    background-image: url('../img/bg_install_map.png')
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
+  &__wrapper
+    display: flex
+    justify-content: flex-end
+  &__info
+    width: 510px
+    max-width: 100%
+    .accordion
+      border-top: 1px solid #e5e5e5
+      padding: 15px 0
+    .card
+      border: 0
+      border-bottom: 1px solid #e5e5e5!important
+      padding-bottom: 20px
+      margin-bottom: 10px
+      .card-header
+        background-color: initial
+        border: 0
+        padding: 0
+        button
+          text-decoration: none
+          padding: 0 20px
+        .collapsed
+          .title
+            &:before
+              content: '\f0da'
+        .title
+          display: flex
+          align-items: center
+          text-align: left
+          color: $color_black
+          font-size: 20px
+          font-weight: 600
+          position: relative
+          &:before
+            position: absolute
+            content: '\f0d7'
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            left: -20px
+            font-size: 14px
+        p
+          text-align: left
+          color: black
+          font-size: 18px
+          font-weight: 400
+          letter-spacing: 0.07px
+      .card-body
+        padding: 0 20px
+        textarea
+          min-height: 80px
+          width: 100%
+          border: 1px solid #e5e5e5
+          outline: 0
+          padding: 10px
+          resize: none
+          &::placeholder
+            color: #858585
+            font-size: 14px
+            font-weight: 300
+            letter-spacing: 0.05px
+        input[type="search"]
+          width: 100%
+          border: 1px solid #e5e5e5
+          outline: 0
+          padding: 10px
+          resize: none
+          margin-bottom: 15px
+          &::placeholder
+            color: #858585
+            font-size: 14px
+            font-weight: 300
+            letter-spacing: 0.05px
+        p
+          color: black
+          font-size: 14px
+          font-weight: 300
+          letter-spacing: 0.05px
+        ul
+          padding: 0
+          margin: 0
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          li
+            list-style: none
+            margin-bottom: 5px
+            img
+              filter: grayscale(100%)
+              transition: 0.3s
+              &:hover
+                transition: 0.3s
+                filter: grayscale(0)
+
+.global_switcher
+  display: flex
+  align-items: baseline
+  .custom-switch
+    margin: 0 15px 0 0
+  &__text
+    .title
+      color: black
+      font-size: 14px
+      font-weight: 600
+      letter-spacing: 0.05px
+    p
+      color: black
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.05px
