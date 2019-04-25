@@ -5,26 +5,31 @@ $r-1200: 1200px
 
 body
   // break max-992
+  @media only screen and (max-width: $r-768)
+    .pagination_global
+      a
+        height: 60px!important
+        font-size: 16px!important
+  // break max-992
   @media only screen and (max-width: $r-992)
     .header
       position: relative
+      padding: 15px 0
+      &__logo
+        img
+          height: 30px
     .page_global, .welcome
       padding: 30px 0
       &:before
         display: none
     .start
+      padding-bottom: 0
       &__form
         width: 100%
         form
           width: 100%
       &__wrapper
         justify-content: flex-start
-      &__info
-        width: 100%
-    .capturing
-      &__widget
-        width: 100%
-        text-align: center
       &__info
         width: 100%
     .call
@@ -41,3 +46,179 @@ body
         width: 100%
       &__info
         width: 100%
+    .title_global
+      font-size: 20px
+    .text_global
+      font-size: 14px
+    .pagination_global
+      display: flex
+      justify-content: space-between
+      a
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100px
+        width: 50%
+        background-color: #383838
+        color: white
+        font-size: 20px
+        &:first-child
+          border-right: 1px solid white
+
+    // Start free
+
+    .start__form
+      .title_global
+        text-align: center
+      .text_global
+        text-align: center
+      form
+        label
+          p
+            font-size: 12px
+        .recieve
+          p
+            font-size: 14px
+        p
+          font-size: 14px
+    .start_form__text
+      text-align: center
+    .start__wrapper
+      position: relative
+      margin-top: 65px
+      padding-bottom: 90px
+      &:before
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: #f4f4f4
+        z-index: -1
+    .start_info
+      padding-top: 100px
+      .title_global
+        text-align: center
+        font-size: 20px
+      p
+        text-align: center
+        font-size: 14px
+    .start_about
+      justify-content: center
+      &__text
+        .title
+          font-size: 24px
+          margin-bottom: 0
+      img
+        width: 40px
+    .start_logos
+      text-align: center
+      .title
+        font-size: 14px
+      ul
+        li
+          img
+            height: 12px
+
+    // Welcome
+
+    .welcome
+      padding-bottom: 0
+      background-color: #fff
+      &_item
+        display: flex
+        flex-direction: column
+        text-align: center
+        padding: 20px
+        .title
+          font-size: 20px
+        p
+          font-size: 14px
+
+    // Start capturing
+
+    .capturing
+      padding-bottom: 0
+      &__widget
+        display: none
+      &__info
+        width: 100%
+        .title_global
+          text-align: center
+        p
+          text-align: center
+        form
+          .sb-checkbox__label
+            height: 20px
+            &:before
+              width: 20px
+              height: 20px
+            &:after
+              width: 20px
+              height: 20px
+          label
+            .title
+              font-size: 14px
+    // Call settings
+
+    .call
+      padding-bottom: 0
+      .container
+        height: 100%
+        display: flex
+        flex-direction: column
+        position: absolute
+        justify-content: space-between
+      &__icon
+        display: none
+    .call_info
+      &__text
+        .title_global
+          text-align: center
+        p
+          text-align: center
+        form
+          border-top: 0
+          border-bottom: 0
+          .title
+            text-align: center
+          p
+            justify-content: center
+            font-size: 14px
+            span
+              font-size: 14px
+          a
+            font-size: 14px
+
+    // Install
+
+    .install
+      padding-bottom: 0
+      &:after
+        display: none
+      &__info
+        .title_global
+          text-align: center
+        p
+          text-align: center
+        .card
+          .card-header
+            .title
+              font-size: 20px
+            p
+              font-size: 14px
+          .card-body
+            p
+              text-align: left
+
+    // Togo
+
+    .togo
+      &__text
+        form
+          label
+            p
+              font-size: 14px
+          p
+            font-size: 14px

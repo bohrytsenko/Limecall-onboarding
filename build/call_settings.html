@@ -11,10 +11,10 @@
     <!--Font-->
     <link rel="stylesheet" href="https://use.typekit.net/bbo0nya.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="../build/bower_comp/swiper/dist/css/swiper.css" />
-    <link rel="stylesheet" href="../build/bower_comp/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="../build/bower_comp/components-font-awesome/css/fontawesome-all.css" />
-    <link rel="stylesheet" href="../build/bower_comp/intl-tel-input/build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="bower_comp/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_comp/components-font-awesome/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="bower_comp/intl-tel-input/build/css/intlTelInput.css" />
     <!-- endbower -->
 </head>
 <body>
@@ -23,7 +23,7 @@
 <header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 header__logo">
                 <a href="/"><img src="img/logo_limecall.png" alt="Logo" /></a>
             </div>
         </div>
@@ -51,8 +51,8 @@
                             <p><a class="resend_code" data-related="call_code" href="#/">Resend Code</a> <span>|</span> <a class="verify_call" data-related="call_recall" href="#/">Verify via call instead</a></p>
                         </div>
                         <div class="call_info__number" id="call_code">
-                            <input type="number">
-                            <input type="submit" value="ENTER CODE">
+                            <input type="tel" id="code">
+                            <input type="submit" value="Enter code">
                             <p><span>Enter your phone number and we’ll Call you.</span></p>
                         </div>
                         <div class="call_info__number" id="call_recall">
@@ -61,10 +61,16 @@
                             <p><span>Enter your phone number and we’ll Call you .</span></p>
                         </div>
                     </form>
-                    <div class="pagination_global">
-                        <a href="#/">Continue >></a>
-                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-6 step_global">
+                <p>Step 3 of 4</p>
+            </div>
+            <div class="col-md-12 col-lg-6 pagination_global">
+                <a href="start_capturing.html"><< Back</a>
+                <a href="install.html">Next >></a>
             </div>
         </div>
     </div>
@@ -74,10 +80,10 @@
 
 
 <!-- bower:js -->
-<script src="../build/bower_comp/jquery/dist/jquery.js"></script>
-<script src="../build/bower_comp/swiper/dist/js/swiper.js"></script>
-<script src="../build/bower_comp/bootstrap/dist/js/bootstrap.js"></script>
-<script src="../build/bower_comp/intl-tel-input/build/js/intlTelInput.js"></script>
+<script src="bower_comp/jquery/dist/jquery.js"></script>
+<script src="bower_comp/swiper/dist/js/swiper.js"></script>
+<script src="bower_comp/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_comp/intl-tel-input/build/js/intlTelInput.js"></script>
 <!-- endbower -->
 <!-- Scripts -->
 <script type="text/javascript" src="js/main.js"></script>
