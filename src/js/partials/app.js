@@ -8,8 +8,6 @@ $( document ).ready(function() {
     var input = document.querySelector("#recall");
     window.intlTelInput(input);
 
-    var input = document.querySelector("#code");
-    window.intlTelInput(input);
 
     // Show/hide
 

@@ -63,6 +63,31 @@
           letter-spacing: 0.07px
       .card-body
         padding: 0 20px
+        form
+          display: flex
+          justify-content: space-between
+          align-items: center
+          flex-wrap: wrap
+          input[type="email"]
+            width: 80%
+            margin-bottom: 0
+          input[type="submit"]
+            min-width: 19%
+            height: 46px
+            border: 0
+            background-color: #383838
+            text-transform: uppercase
+            color: white
+            font-size: 14px
+            font-weight: 600
+            letter-spacing: 1.4px
+            transition: 0.3s
+            &:hover
+              transition: 0.3s
+              box-shadow: 0 10px 24px -16px rgba(56,56,56,1)
+            &:focus
+              transition: 0.3s
+              box-shadow: 0 0 38px -9px rgba(56,56,56,1)
         textarea
           min-height: 80px
           width: 100%
@@ -70,12 +95,13 @@
           outline: 0
           padding: 10px
           resize: none
+          margin-bottom: 25px
           &::placeholder
             color: #858585
             font-size: 14px
             font-weight: 300
             letter-spacing: 0.05px
-        input[type="search"]
+        input[type="search"], input[type="email"]
           width: 100%
           border: 1px solid #e5e5e5
           outline: 0

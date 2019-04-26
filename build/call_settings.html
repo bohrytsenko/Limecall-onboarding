@@ -11,10 +11,10 @@
     <!--Font-->
     <link rel="stylesheet" href="https://use.typekit.net/bbo0nya.css">
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_comp/swiper/dist/css/swiper.css" />
-    <link rel="stylesheet" href="bower_comp/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_comp/components-font-awesome/css/fontawesome-all.css" />
-    <link rel="stylesheet" href="bower_comp/intl-tel-input/build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="../build/bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="../build/bower_comp/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../build/bower_comp/components-font-awesome/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="../build/bower_comp/intl-tel-input/build/css/intlTelInput.css" />
     <!-- endbower -->
 </head>
 <body>
@@ -51,8 +51,9 @@
                             <p><a class="resend_code" data-related="call_code" href="#/">Resend Code</a> <span>|</span> <a class="verify_call" data-related="call_recall" href="#/">Verify via call instead</a></p>
                         </div>
                         <div class="call_info__number" id="call_code">
-                            <input type="tel" id="code">
+                            <input type="number" id="code">
                             <input type="submit" value="Enter code">
+                            <p><a data-related="call_number" href="#/">Change number</a></p>
                             <p><span>Enter your phone number and we’ll Call you.</span></p>
                         </div>
                         <div class="call_info__number" id="call_recall">
@@ -70,7 +71,6 @@
             </div>
             <div class="col-md-12 col-lg-6 pagination_global">
                 <a href="start_capturing.html"><< Back</a>
-                <a href="install.html">Next >></a>
             </div>
         </div>
     </div>
@@ -80,10 +80,10 @@
 
 
 <!-- bower:js -->
-<script src="bower_comp/jquery/dist/jquery.js"></script>
-<script src="bower_comp/swiper/dist/js/swiper.js"></script>
-<script src="bower_comp/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_comp/intl-tel-input/build/js/intlTelInput.js"></script>
+<script src="../build/bower_comp/jquery/dist/jquery.js"></script>
+<script src="../build/bower_comp/swiper/dist/js/swiper.js"></script>
+<script src="../build/bower_comp/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../build/bower_comp/intl-tel-input/build/js/intlTelInput.js"></script>
 <!-- endbower -->
 <!-- Scripts -->
 <script type="text/javascript" src="js/main.js"></script>
